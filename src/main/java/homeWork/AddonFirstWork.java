@@ -1,4 +1,4 @@
-package HomeWork;
+package homeWork;
 
 public class AddonFirstWork {
     public static void main(String[] args) {

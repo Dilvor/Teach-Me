@@ -1,4 +1,4 @@
-package HomeWork;
+package homeWork;
 
 public class AddonSecondWork {
     public static int getFactorial(int f) {
