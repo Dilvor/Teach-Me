@@ -10,13 +10,20 @@ public class FourthWork {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите n-ый член последовательности Фибоначи для получения его значения");
         int n = scanner.nextInt();
-        int a = 0;
-        int b = 1;
-        for (int i = 2;i < n; ++i){
-            int next = a + b;
-            a = b;
-            b = next;
+        while (n <= 0) {
+            System.out.println("Вы ввели некоректное значение!");
+            n = scanner.nextInt();
+
         }
-            System.out.println(n+"-ый член последовательности Фибоначи: "+b);
+        {
+            int a = 0;
+            int b = 1;
+            for (int i = 2; i < n; ++i) {
+                int next = a + b;
+                a = b;
+                b = next;
+            }
+            System.out.println(n + "-ый член последовательности Фибоначи: " + b);
         }
     }
+}
