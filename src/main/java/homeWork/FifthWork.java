@@ -9,26 +9,27 @@ public class FifthWork {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите длинну массива");
-        while (!scanner.hasNextInt()){
+        while (!scanner.hasNextInt()) {
             String text = scanner.next();
             System.out.println(text + " не число дурилка");
         }
         int index = scanner.nextInt();
-        index = index -1;
+        index = index - 1;//Зачем тут -1?Я....не помню....
 
         Random random = new Random();
 
         int[] numbers = new int[index];
         for (int i = 0; i < index; i++) {
-            numbers[i] = random.nextInt(index);
+            numbers[i] = random.nextInt(index);//При каждой новой итерации рандом будет генерить новое число,
+            //в заданных пользователем рамках длинны массива).
         }
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
+        for (int i = 0; i < numbers.length; i++) {//Задан цикл до границ "numbers.lenght".
+            System.out.print(numbers[i] + " ");//Выведение всех сгенеренных чисел," " - нужны для пробела между числами
         }
 
-        System.out.println(" ");
+        System.out.println(" ");//Это нужно для перевода последующих выводов результатов на новых строках
 
-        //Нахождение значения максимума массива
+        //Нахождение значения максимума массива.
         int max = numbers[0];
         for (int i = 0; i < numbers.length; i++) {
             if (max < numbers[i]) {
@@ -37,7 +38,7 @@ public class FifthWork {
         }
         System.out.println("Max массива: " + max);
 
-        //Нахождение значения минимума массива
+        //Нахождение значения минимума массива.
         int min = numbers[0];
         for (int i = 0; i < numbers.length; i++) {
             if (min > numbers[i]) {
@@ -46,11 +47,11 @@ public class FifthWork {
         }
         System.out.println("Min массива: " + min);
 
-        //Нахождение среднего значения массива
+        //Нахождение среднего значения массива.
         double avg = 0;
-        for (int i = 0; i < numbers.length; i++){
-            avg += (double) numbers[i]/numbers.length;//через итерации,сумма чисел будет поделена на количество чисел
+        for (int i = 0; i < numbers.length; i++) {
+            avg += (double) numbers[i] / numbers.length;//Через итерации,сумма чисел будет поделена на количество чисел.
         }
-        System.out.printf("Avg массива: %.2f ",avg);//выведение среднего округленного значения(2 знака после запятой)
+        System.out.printf("Avg массива: %.2f ", avg);//Выведение среднего округленного значения(2 знака после запятой).
     }
 }
