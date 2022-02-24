@@ -1,4 +1,4 @@
-package homeWork;
+package homeWork.homeWork3;
 
 public class ThirdWork {
     //Тут у нас один из возможных вариантов вычисления квадратного корня без ипользования функции "Math"
