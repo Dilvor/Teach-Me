@@ -14,7 +14,7 @@ public class FifthWork {
             System.out.println(text + " не число дурилка");
         }
         int index = scanner.nextInt();
-        index = index - 1;//Зачем тут -1?Я....не помню....
+        index = index - 1;
 
         Random random = new Random();
 
@@ -30,28 +30,20 @@ public class FifthWork {
         System.out.println(" ");//Это нужно для перевода последующих выводов результатов на новых строках
 
         //Нахождение значения максимума массива.
-        int max = numbers[0];
+        double max = numbers[0];
+        double min = numbers[0];
+        double avg = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (max < numbers[i]) {
                 max = numbers[i];
             }
-        }
-        System.out.println("Max массива: " + max);
-
-        //Нахождение значения минимума массива.
-        int min = numbers[0];
-        for (int i = 0; i < numbers.length; i++) {
             if (min > numbers[i]) {
                 min = numbers[i];
             }
-        }
-        System.out.println("Min массива: " + min);
-
-        //Нахождение среднего значения массива.
-        double avg = 0;
-        for (int i = 0; i < numbers.length; i++) {
             avg += (double) numbers[i] / numbers.length;//Через итерации,сумма чисел будет поделена на количество чисел.
         }
-        System.out.printf("Avg массива: %.2f ", avg);//Выведение среднего округленного значения(2 знака после запятой).
+        System.out.println("Min массива: " + min);
+        System.out.println("Max массива: " + max);
+        System.out.println("Avg массива: " + avg);//Выведение среднего округленного значения(2 знака после запятой).
     }
 }

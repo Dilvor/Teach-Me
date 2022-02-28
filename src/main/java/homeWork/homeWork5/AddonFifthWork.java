@@ -13,7 +13,7 @@ public class AddonFifthWork {
         fibonacciArray[0] = 1;//Задание логики.
         fibonacciArray[1] = 1;
         System.out.println("Well, hello there");
-        int lastIndex = 2;//Соответствует последнему заполненному в массиве...?????wat????
+        int lastIndex = 2;//До чего был заполнен массив.
         while (true) {
             int index = getFibonacciIndex(arrayLenght);
             System.out.println(index);
