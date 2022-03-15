@@ -8,5 +8,5 @@ public abstract class HardAnimal {//"abstract" - своего рода шабл�
         this.name = name;
     }
 
-    public abstract void voice();//ивотное может издавать звук
+    public abstract void voice();//животное может издавать звук
 }
