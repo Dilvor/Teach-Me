@@ -14,6 +14,7 @@ public class AutomobileRunner {
         int maxWeight = 8000;//максимально допустимый вес(в КГ)
         double maxWidth = 4.0;//максимально допустимая ширина(в метрах)
         double maxHeight = 2.5;//максимально допустимая высота(в метрах)
+
         Automobile[] automobiles = new Automobile[]{Car1, Car2, Car3, Truck1, Truck2, Truck3};
         for (Automobile automobile : automobiles) {
             if (limitSpeed < automobile.speed) {
